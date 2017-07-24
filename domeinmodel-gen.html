@@ -1,0 +1,30 @@
+<h3>Algemeen</h3>
+<p>Vanuit de geschetste benadering is het registratieobject in volledigheid beschreven en gemodelleerd. Dat laatste wil niet
+    anders zeggen dan dat het object op inzichtelijke en samenhangende manier is opgesplitst in delen om duidelijk te kunnen
+    maken waaruit de informatie is opgebouwd.</p>
+<p>Modellering van informatie kent verschillende invalshoeken. In de catalogus wordt het inhoudelijke perspectief gekozen omdat
+    dat met name waarde heeft in de communicatie tussen mensen. Zo’n model wordt in de basisregistratie ondergrond een <i>domeinmodel</i>    genoemd. Uit het domeinmodel wordt een technisch model afgeleid dat ook meeweegt dat informatiesystemen efficiënt met
+    elkaar moeten kunnen spreken. Het meer technische model heet <i>productmodel</i> en dat staat aan de basis van de technische
+    documentatie.
+</p>
+<p>Een domeinmodel maakt niet alleen de definitie van de informatie-inhoud gemakkelijker, het dient ook om inzicht te geven
+    in de keuzen die gemaakt zijn bij het bepalen van welke gegevens van belang worden geacht, en welke niet. Omdat het een
+    goed overzicht geeft, wordt het domeinmodel opgenomen in de gegevensdefinitie van een registratieobject. Voor het domeinmodel
+    wordt de UML notatie gebruikt. Met wat kennis van de gebruikte symbolen is het makkelijk te lezen. In hoofdstuk 4 worden
+    de gegevens in het model nader beschreven.</p>
+<p>Het domeinmodel (zie afbeelding) beschrijft het object zoals dat in de registratie ondergrond is vastgelegd. Het model beschrijft
+    een object dat voldoet aan het strikte kwaliteitsregime (IMBRO). Eventuele bijzonderheden voor IMBRO/A zijn niet in het
+    domeinmodel zichtbaar, maar worden bij de uitwerking in hoofdstuk 4 wel expliciet beschreven. Het domeinmodel laat ook
+    zien welke gegevens alleen aan de dataleverancier en de bronhouder worden uitgeleverd.</p>
+<p>In het domeinmodel wordt de kardinaliteit van attributen en entiteiten gegeven. De kardinaliteit geeft aan hoe vaak een gegeven
+    voorkomt. De meeste gegevens hebben kardinaliteit 1 en dat betekent dat een gegeven precies een keer voorkomt. Sommige
+    gegevens mogen een of meer keer voorkomen, die hebben kardinaliteit 1..*. Een derde categorie vormen de gegevens die
+    kardinaliteit 0..1 hebben. Een dergelijk gegeven komt 1 keer voor of niet. De laatste categorie heeft kardinaliteit 0..*,
+    en een dergelijk gegeven kan 0, 1 of meer keren voorkomen.</p>
+<p>In het domeinmodel is de kardinaliteit van entiteiten consequent opgenomen; de vier varianten komen alle voor. Bij attributen
+    komen maar twee varianten voor, kardinaliteit 1 en kardinaliteit 0..1. Om het geheel overzichtelijk te houden is de standaardwaarde
+    kardinaliteit 1 niet opgenomen, en wordt alleen kardinaliteit 0..1 vermeld.</p>
+<p>De kardinaliteit in het domeinmodel moet overigens altijd in samenhang met de regels die in de definitie van het gegeven
+    zijn opgenomen worden begrepen. De kardinaliteit en de regels bepalen samen of een gegeven al dan niet aanwezig is.</p>
+<p>Om het model makkelijker te kunnen lezen wordt hier een globale beschrijving van het registratieobject en de belangrijkste
+    entiteiten gegeven.</p>
