@@ -1,25 +1,7 @@
-<h3>Toelichting domeinmodel</h3>
-<p>Het registratieobject is in volledigheid beschreven en gemodelleerd. Dat laatste wil niet
-    anders zeggen dan dat het registratieobject op inzichtelijke en samenhangende manier is opgesplitst in delen om duidelijk te kunnen
-    maken waaruit de informatie is opgebouwd.</p>
-<p>Modellering van informatie kent verschillende invalshoeken. In de catalogus wordt het inhoudelijke perspectief gekozen omdat
-    dat met name waarde heeft in de communicatie tussen mensen. Zo’n model wordt in de basisregistratie ondergrond een <i>domeinmodel</i> genoemd. Uit het domeinmodel wordt een technisch model afgeleid dat ook meeweegt dat informatiesystemen efficiënt met
-    elkaar moeten kunnen spreken. Het meer technische model heet <i>productmodel</i> en dat staat aan de basis van de technische
-    documentatie.</p>
-<p>Een domeinmodel maakt niet alleen de definitie van de informatie-inhoud gemakkelijker, het dient ook om inzicht te geven
-    in de keuzen die gemaakt zijn bij het bepalen welke gegevens van belang worden geacht, en welke niet. Omdat het een
-    goed overzicht geeft, wordt het domeinmodel opgenomen in de gegevensdefinitie van een registratieobject. Voor het domeinmodel
-    wordt de UML notatie gebruikt. Met wat kennis van de gebruikte symbolen is het makkelijk te lezen. In <a href="#cat">hoofdstuk 5</a> worden
-    de gegevens in het model nader beschreven.</p>
-<p>Het domeinmodel (zie begin van <a href="#cat">hoofdstuk 5</a>) beschrijft het object zoals dat in de registratie ondergrond is vastgelegd. Het model beschrijft
-    een object dat voldoet aan het strikte kwaliteitsregime (IMBRO). Eventuele bijzonderheden voor IMBRO/A zijn niet in het
-    domeinmodel zichtbaar, maar worden bij de uitwerking in hoofdstuk 5 wel expliciet beschreven.</p>
-<p>Het domeinmodel laat ook zien welke gegevens alleen aan de dataleverancier en de bronhouder worden uitgeleverd, deze worden voorafgegaan door een -. Alle overige attributen worden uitgeleverd aan alle afnemers en worden aangegeven met een +.</p>
-<p>In het domeinmodel wordt de kardinaliteit van attributen en entiteiten gegeven. De kardinaliteit geeft aan hoe vaak een gegeven
-    voorkomt. De meeste gegevens hebben kardinaliteit 1 en dat betekent dat een gegeven precies een keer voorkomt. Sommige
-    gegevens mogen een of meer keer voorkomen, die hebben kardinaliteit 1..*. Een derde categorie vormen de gegevens die
-    kardinaliteit 0..1 hebben. Een dergelijk gegeven komt 1 keer voor of niet. De laatste categorie heeft kardinaliteit 0..*,
-    en een dergelijk gegeven kan 0, 1 of meer keren voorkomen.</p>
-<p>In het domeinmodel is de kardinaliteit van entiteiten consequent opgenomen; de vier varianten kunnen allemaal voor komen. Bij attributen is, om het geheel overzichtelijk te houden, de standaardwaarde kardinaliteit 1 niet opgenomen. De kardinaliteit is alleen opgenomen wanneer die ongelijk is aan 1.</p>
-<p>De kardinaliteit in het domeinmodel moet overigens altijd in samenhang met de regels die in de definitie van het gegeven
-    zijn opgenomen worden begrepen. De kardinaliteit en de regels bepalen samen of een gegeven al dan niet aanwezig is (zie <a href="#verplichte-gegevens-waarden">paragraaf 4.4</a>).</p>
+<h3>Het domeinmodel</h3>
+<p>Het domeinmodel geeft een overzicht van de gegevens van het registratieobject en laat de onderlinge samenhang zien. Modellering van informatie kent verschillende invalshoeken. In de catalogus is het inhoudelijke perspectief gekozen omdat dat de meeste waarde heeft voor de mensen die de informatie moeten begrijpen. Een dergelijk model wordt in de basisregistratie ondergrond een <i>domeinmodel</i> genoemd. Uit het domeinmodel wordt een technisch model afgeleid dat meeweegt dat informatiesystemen efficiënt met elkaar moeten kunnen spreken. Het meer technische model heet <i>productmodel</i> en dat staat aan de basis van de documentatie van de software. 
+Voor het domeinmodel wordt de UML-notatie gebruikt. Met kennis van de gebruikte symbolen is het gemakkelijk te lezen.
+</p>
+<p>Het domeinmodel is hiërarchisch opgebouwd. De genummerde blokjes in het domeinmodel staan voor de entiteiten waaruit het object is opgebouwd. In de blokjes staan de namen opgesomd van de attributen, de eigenschappen van de entiteiten, met daarachter de naam van de bijbehorende waardenverzameling (domein) en de kardinaliteit. Bij attributen is de kardinaliteit alleen opgenomen wanneer die ongelijk is aan 1. Overigens moet de kardinaliteit altijd in samenhang met de regels die in de definitie van het gegeven zijn opgenomen worden begrepen. De kardinaliteit en de regels bepalen samen of een gegeven al dan niet aanwezig is. De figuren laten ook zien welke attributen alleen aan de dataleverancier en de bronhouder worden uitgeleverd.</p>
+<p>De getallen bij de entiteiten geven aan hoe vaak een entiteit voorkomt. De meeste entiteiten hebben kardinaliteit [1] en dat betekent dat een gegeven precies een keer voorkomt. Sommige entiteiten mogen een of meer keer voorkomen, die hebben kardinaliteit [1..*]. Een derde categorie vormen de entiteiten die kardinaliteit [0..1] hebben. Een dergelijk gegeven komt 1 keer voor of niet. De vierde en laatste categorie heeft kardinaliteit [0..*], en een dergelijk gegeven kan 0, 1 of meer keren voorkomen.</p>
+<p>Een registratieobject heeft een bepaald kwaliteitsregime. Zoals eerder gesteld wordt een gegevensdefinitie opgesteld vanuit  het streven IMBRO/A zo min mogelijk te laten afwijken van en IMBRO. Wanneer dat niet helemaal gelukt is en er voor een IMBRO/A een apart domein nodig is, is dat niet in het domeinmodel zichtbaar. Wanneer dat niet gelukt is en er voor IMBRO/A bijzondere attributen (of entiteiten) bestaan is dat wel in het model aangegeven.</p>
