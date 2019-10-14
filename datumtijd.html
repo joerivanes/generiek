@@ -1,26 +1,27 @@
 <h4>Datum en tijd</h4>
 <p>Voor gegevens die over tijd gaan, de temporele gegevens, worden twee domeinen gebruikt. Een voor de tijd tot op de seconde nauwkeurig (DatumTijd), een voor de tijd tot op de dag nauwkeurig (Datum).</p>
 <p>In ieder domein gaat het om de tijd gemeten volgens de Gregoriaanse kalender. Indien het domein DatumTijd wordt gebruikt moet ook de tijdzone worden meegegeven. Voor de tijdzone is UTC de referentie. UTC is de mondiaal geaccepteerde standaardtijd en de opvolger van GMT (Greenwich Mean Time); de drie letters staan voor Coordinated Universal Time. 
-Door de tijdzone mee te geven kan lokale tijd worden omgezet naar UTC.</p>
-<p>De opbouw van de twee domeinen volgt dezelfde conventies. Het eerste element in de opbouw staat voor het jaar, dan volgt de maand, enz., en het laatste element staat voor de tijdzone. Om de verschillende elementen aan te geven worden letters gebruikt: jaar (J), maand (M), dag (D), uur (U), minuut (M)en seconde (S), gevolgd door de tijdzone. Het aantal letters geeft de lengte aan.</p>
-<p>Voor de meest uitgebreide variant van de opbouw, die van DatumTijd, wordt dit JJJJ-MM-DDTUU:MM:SS+UU:MM. De T is het teken dat de datum en het tijdstip op die datum scheidt. De + is het scheidingteken tussen het tijdstip en de tijdzone. Zoals uit de opbouw blijkt wordt de tijdzone in uren en minuten gegeven. De meeste tijdzones zijn overigens uitgedrukt in gehele uren (UU:00). In Nederland geldt Centraal Europese Tijd (UTC+1:00) of Centraal Europese Zomertijd (UTC+2.00).</p>
+Door de tijdzone mee te geven kan lokale tijd worden omgezet naar UTC.
+</p>
+<p>Het patroon van de twee domeinen volgt dezelfde conventies. Het eerste element in het patroon staat voor het jaar, dan volgt de maand, enz., en het laatste element staat voor de tijdzone. Om de verschillende elementen aan te geven worden letters gebruikt: jaar (J), maand (M), dag (D), uur (U), minuut (M)en seconde (S), gevolgd door de tijdzone. Het aantal letters geeft de lengte aan.</p>
+<p>Voor de meest uitgebreide variant van het patroon, die van DatumTijd, wordt dit JJJJ-MM-DDTUU:MM:SS+UU:MM. De T is het teken dat de datum en het tijdstip op die datum scheidt. De + is het scheidingteken tussen het tijdstip en de tijdzone. Zoals uit het patroon blijkt wordt de tijdzone in uren en minuten gegeven. De meeste tijdzones zijn overigens uitgedrukt in gehele uren (UU:00). In Nederland geldt Centraal Europese Tijd (UTC+1:00) of Centraal Europese Zomertijd (UTC+2.00).</p>
 <section id="gen-datumtijd">
     <h5>DatumTijd</h5>
-    <p>Het domein DatumTijd geeft een tijdstip volgens de Gregoriaanse kalender tot op de seconde nauwkeurig. De opbouw is JJJJ-MM-DDTUU:MM:SS+UU:MM. Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is.</p>
+    <p>Het domein DatumTijd geeft een tijdstip volgens de Gregoriaanse kalender tot op de seconde nauwkeurig. Het patroon is JJJJ-MM-DDTUU:MM:SS+UU:MM. Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende de naam te geven, omdat het patroon altijd hetzelfde is.</p>
 </section>
 <section id="gen-datum">
     <h5>Datum</h5>
-    <p>Het domein Datum geeft een datum volgens de Gregoriaanse kalender tot op de dag nauwkeurig. De opbouw is JJJJ-MM-DD. Wanneer een attribuut een domein van het type Datum heeft is het voldoende de naam te geven, omdat de opbouw altijd hetzelfde is.</p>
+    <p>Het domein Datum geeft een datum volgens de Gregoriaanse kalender tot op de dag nauwkeurig. Het patroon is JJJJ-MM-DD. Wanneer een attribuut een domein van het type Datum heeft is het voldoende de naam te geven, omdat het patroon altijd hetzelfde is.</p>
 </section>
 <section id="gen-onvolledigedatum">
     <h5>OnvolledigeDatum</h5>
     <p>Voor gegevens die onder het kwaliteitsregime IMBRO/A aangeleverd worden, geldt een derde domein met vier keuzemogelijkheden.</p>
         <ul>
-            <li>De datum tot op de dag nauwkeurig, met als opbouw JJJJ-MM-DD</li>
-            <li>De datum tot op de maand nauwkeurig, met als opbouw JJJJ-MM</li> 
-            <li>De datum tot op het jaar nauwkeurig, met als opbouw JJJJ</li>
+            <li>De datum tot op de dag nauwkeurig, met als patroon JJJJ-MM-DD</li>
+            <li>De datum tot op de maand nauwkeurig, met als patroon JJJJ-MM</li> 
+            <li>De datum tot op het jaar nauwkeurig, met als patroon JJJJ</li>
             <li>Geen datum bekend, met als vaste waarde onbekend.</li>
         </ul>
-    <p>De keuze die gemaakt wordt is gebaseerd op de beschikbaarheid van gegevens. De gebruiker moet ervan uit gaan dat de informatie zo nauwkeurig mogelijk is opgenomen. Wanneer een attribuut een domein van het type OnvolledigeDatum heeft is het voldoende de naam te geven, omdat de opbouw en de vier keuzen altijd hetzelfde zijn, en indien van toepassing wordt het bereik gegeven.</p>
+    <p>De keuze die gemaakt wordt is gebaseerd op de beschikbaarheid van gegevens. De gebruiker moet ervan uit gaan dat de informatie zo nauwkeurig mogelijk is opgenomen. Wanneer een attribuut een domein van het type OnvolledigeDatum heeft is het voldoende de naam te geven, omdat het patroon en de vier keuzen altijd hetzelfde zijn, en indien van toepassing wordt het bereik gegeven.</p>
     <p>Bij inname wordt gewoonlijk gecontroleerd of een temporeel gegeven in een brondocument in een logische opeenvolging van gebeurtenissen past. Daartoe wordt de waarde vergeleken met een ander temporeel gegeven, de referentiedatum of het referentietijdstip.</p>
 </section>
